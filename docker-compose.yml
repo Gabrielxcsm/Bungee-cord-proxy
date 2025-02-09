@@ -1,0 +1,9 @@
+version: '3'
+services:
+  bungeecord:
+    build: .
+    container_name: bungeecord
+    ports:
+      - "25577:25577"
+    volumes:
+      - ./config:/server
